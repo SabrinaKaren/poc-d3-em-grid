@@ -1,3 +1,31 @@
-<div>
-    <h2>POC 1 - Usando Table</h2>
+<div class="mt-5 page-margin">
+    <h1>POC 1 - Usando Table</h1>
+
+    <!-- Table -->
+    <table mat-table [dataSource]="data" class="mat-elevation-z8">
+      
+        <ng-container matColumnDef="cgf">
+          <th mat-header-cell *matHeaderCellDef>CGF</th>
+          <td mat-cell *matCellDef="let element"> {{element.cgf}} </td>
+        </ng-container>
+      
+        <ng-container matColumnDef="notaGeral">
+          <th mat-header-cell *matHeaderCellDef>NOTA GERAL</th>
+          <td mat-cell *matCellDef="let element"> {{element.notaGeral}} </td>
+        </ng-container>
+      
+        <ng-container matColumnDef="historico">
+          <th mat-header-cell *matHeaderCellDef>HISTÓRICO</th>
+          <td mat-cell *matCellDef="let element"> {{element.historico}} </td>
+        </ng-container>
+      
+        <ng-container matColumnDef="pesoNaNotaGeral">
+          <th mat-header-cell *matHeaderCellDef>PESO NA NOTA GERAL</th>
+          <td mat-cell *matCellDef="let element"> {{element.pesoNaNotaGeral}} </td>
+        </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+    </table>      
 </div>
