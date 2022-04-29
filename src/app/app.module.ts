@@ -12,11 +12,13 @@ import { MatTableModule } from '@angular/material/table';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatInputModule } from '@angular/material/input';
+import { GenericComponent } from './shared/generic/generic.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Poc1TableComponent
+    Poc1TableComponent,
+    GenericComponent
   ],
   imports: [
     BrowserModule,
