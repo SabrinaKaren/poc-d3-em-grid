@@ -20,6 +20,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { Poc2GridComponent } from './pages/poc2-grid/poc2-grid.component';
 import { Poc3TableComponent } from './pages/poc3-table/poc3-table.component';
 import { DotsChartComponent } from './shared/dots-chart/dots-chart.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { DotsChartComponent } from './shared/dots-chart/dots-chart.component';
     MatFormFieldModule,
     MatPaginatorModule,
     MatInputModule,
-    MatGridListModule
+    MatGridListModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
