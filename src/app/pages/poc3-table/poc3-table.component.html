@@ -11,7 +11,7 @@
             <tr *ngFor="let item of data; let index=index">
                 <td *ngFor="let attribute of getAtributosDeUmItem(item)">{{attribute}}</td>
                 <td>
-                    <app-bar-chart [chartIdentification]="index.toString()"></app-bar-chart>
+                    <app-bar-chart [id]="index.toString()"></app-bar-chart>
                 </td>
             </tr>
         </tbody>

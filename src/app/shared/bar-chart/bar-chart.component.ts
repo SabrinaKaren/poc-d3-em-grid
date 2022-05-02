@@ -8,7 +8,8 @@ import * as d3 from 'd3';
 })
 export class BarChartComponent implements OnInit {
 
-  @Input() chartIdentification: string = '';
+  @Input() id: string = '';
+  @Input() dataSourceUrl: string = '';
 
   private svg: any;
   private margin = 50;
@@ -21,11 +22,11 @@ export class BarChartComponent implements OnInit {
 
   ngAfterViewInit(): void {
     this.createSvg();
-    d3.csv("/assets/frameworks.csv").then(data => this.drawBars(data));
+    d3.csv(this.dataSourceUrl ? this.dataSourceUrl : "/assets/mocked-data1.csv").then(data => this.drawBars(data));
   }
 
   private createSvg(): void {
-    this.svg = d3.select("div#bar" + this.chartIdentification)
+    this.svg = d3.select("div#bar" + this.id)
       .append("svg")
       .attr("width", this.width + (this.margin * 2))
       .attr("height", this.height + (this.margin * 2))

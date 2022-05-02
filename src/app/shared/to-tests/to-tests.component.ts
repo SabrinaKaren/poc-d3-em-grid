@@ -17,7 +17,7 @@ export class ToTestsComponent implements OnInit {
 
   ngOnInit(): void {
     this.createSvg();
-    d3.csv("/assets/frameworks.csv").then(data => this.drawBars(data));
+    d3.csv("/assets/mocked-data1.csv").then(data => this.drawBars(data));
   }
 
   private createSvg(): void {
