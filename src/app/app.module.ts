@@ -14,13 +14,17 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatInputModule } from '@angular/material/input';
 import { GenericComponent } from './shared/generic/generic.component';
 import { ToTestsComponent } from './shared/to-tests/to-tests.component';
+import { BarChartComponent } from './shared/bar-chart/bar-chart.component';
+import { LineChartComponent } from './shared/line-chart/line-chart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Poc1TableComponent,
     GenericComponent,
-    ToTestsComponent
+    ToTestsComponent,
+    BarChartComponent,
+    LineChartComponent
   ],
   imports: [
     BrowserModule,
