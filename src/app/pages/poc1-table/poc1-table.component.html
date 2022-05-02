@@ -29,6 +29,13 @@
       <td mat-cell *matCellDef="let element">{{element.pesoNaNotaGeral}}</td>
     </ng-container>
   
+    <ng-container matColumnDef="empty">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let element">
+        <span style="color: green">Ver mais</span>
+      </td>
+    </ng-container>
+  
     <tr mat-header-row *matHeaderRowDef="columnsIdentificator"></tr>
     <tr mat-row *matRowDef="let row; columns: columnsIdentificator"></tr>
 
