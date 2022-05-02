@@ -17,7 +17,8 @@
         <ng-container matColumnDef="historico">
           <th mat-header-cell *matHeaderCellDef>HISTÓRICO</th>
           <!-- <td mat-cell *matCellDef="let element"> {{element.historico}} </td> -->
-          <td mat-cell *matCellDef="let element"> <app-generic [initialValue]="'historico'"></app-generic> </td>
+          <!-- <td mat-cell *matCellDef="let element"> <app-generic [initialValue]="'historico'"></app-generic> </td> -->
+          <td mat-cell *matCellDef="let element"> <app-bar-chart></app-bar-chart> </td>
         </ng-container>
       
         <ng-container matColumnDef="pesoNaNotaGeral">
