@@ -1,0 +1,9 @@
+<div class="mt-5 page-margin">
+    <h1>POC 2 - Usando Grid</h1>
+
+    <mat-grid-list cols="4" rowHeight="1:1">
+        <!-- <mat-grid-tile *ngFor="let title of displayedColumns">{{title}}</mat-grid-tile>
+        <mat-grid-tile *ngFor="let item of data">{{item.notaGeral}}</mat-grid-tile> -->
+        <mat-grid-tile *ngFor="let item of data"> <app-bar-chart></app-bar-chart> </mat-grid-tile>
+    </mat-grid-list>  
+</div>

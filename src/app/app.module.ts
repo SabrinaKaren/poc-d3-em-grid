@@ -16,6 +16,9 @@ import { GenericComponent } from './shared/generic/generic.component';
 import { ToTestsComponent } from './shared/to-tests/to-tests.component';
 import { BarChartComponent } from './shared/bar-chart/bar-chart.component';
 import { LineChartComponent } from './shared/line-chart/line-chart.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { Poc2GridComponent } from './pages/poc2-grid/poc2-grid.component';
+import { Poc3TableComponent } from './pages/poc3-table/poc3-table.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,9 @@ import { LineChartComponent } from './shared/line-chart/line-chart.component';
     GenericComponent,
     ToTestsComponent,
     BarChartComponent,
-    LineChartComponent
+    LineChartComponent,
+    Poc2GridComponent,
+    Poc3TableComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +42,8 @@ import { LineChartComponent } from './shared/line-chart/line-chart.component';
     MatTableModule,
     MatFormFieldModule,
     MatPaginatorModule,
-    MatInputModule
+    MatInputModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

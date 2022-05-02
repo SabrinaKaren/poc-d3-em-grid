@@ -11,11 +11,25 @@
       <mat-icon>table_chart</mat-icon>
       <span>POC 1 - Table</span>
     </button>
+    <button mat-menu-item routerLink="/poc2">
+      <mat-icon>grid_on</mat-icon>
+      <span>POC 2 - Grid</span>
+    </button>
+    <button mat-menu-item routerLink="/poc3">
+      <mat-icon>table_chart</mat-icon>
+      <span>POC 3 - Table</span>
+    </button>
     <button mat-menu-item disabled>
       <mat-icon>cached</mat-icon>
-      <span>POC 2 - Loading ...</span>
+      <span>POC 4 - Loading ...</span>
     </button>
   </mat-menu>
 </div>
 
 <router-outlet></router-outlet>
+
+<!-- <app-to-tests [chartIdentification]="'1'"></app-to-tests>
+<hr>
+<app-to-tests [chartIdentification]="'2'"></app-to-tests>
+<hr>
+<app-to-tests [chartIdentification]="'3'"></app-to-tests> -->

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import * as d3 from 'd3';
 
 @Component({
@@ -8,6 +8,8 @@ import * as d3 from 'd3';
 })
 export class BarChartComponent implements OnInit {
 
+  @Input() chartIdentification: string = '';
+
   private svg: any;
   private margin = 50;
   private width = 150 - (this.margin * 2);
@@ -15,13 +17,15 @@ export class BarChartComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
+
+  ngAfterViewInit(): void {
     this.createSvg();
     d3.csv("/assets/frameworks.csv").then(data => this.drawBars(data));
   }
 
   private createSvg(): void {
-    this.svg = d3.select("figure#bar")
+    this.svg = d3.select("div#bar" + this.chartIdentification)
       .append("svg")
       .attr("width", this.width + (this.margin * 2))
       .attr("height", this.height + (this.margin * 2))

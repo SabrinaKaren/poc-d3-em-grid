@@ -29,7 +29,6 @@ export class LineChartComponent implements OnInit {
 
   public ngOnChanges(changes: any): void {
     if (changes.hasOwnProperty('data') && this.data) {
-      console.log(this.data);
 
       this.initializeChart();
       this.drawChart();
