@@ -19,6 +19,7 @@ import { LineChartComponent } from './shared/line-chart/line-chart.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { Poc2GridComponent } from './pages/poc2-grid/poc2-grid.component';
 import { Poc3TableComponent } from './pages/poc3-table/poc3-table.component';
+import { DotsChartComponent } from './shared/dots-chart/dots-chart.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { Poc3TableComponent } from './pages/poc3-table/poc3-table.component';
     BarChartComponent,
     LineChartComponent,
     Poc2GridComponent,
-    Poc3TableComponent
+    Poc3TableComponent,
+    DotsChartComponent
   ],
   imports: [
     BrowserModule,

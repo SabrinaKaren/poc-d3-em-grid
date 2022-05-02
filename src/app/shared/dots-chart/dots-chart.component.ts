@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import * as d3 from 'd3';
 
 @Component({
-  selector: 'app-to-tests',
-  templateUrl: './to-tests.component.html',
-  styleUrls: ['./to-tests.component.scss']
+  selector: 'app-dots-chart',
+  templateUrl: './dots-chart.component.html',
+  styleUrls: ['./dots-chart.component.scss']
 })
-export class ToTestsComponent implements OnInit {
+export class DotsChartComponent implements OnInit {
 
   constructor() { }
 
