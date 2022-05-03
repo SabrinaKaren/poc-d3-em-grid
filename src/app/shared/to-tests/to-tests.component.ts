@@ -17,11 +17,10 @@ export class ToTestsComponent implements OnInit {
     // cria o elemento svg:
     var svg = d3.select("#line").append("svg").attr("width", 800).attr("height", 200);
 
+    // prepara uma função auxiliar
     var lineFunc = d3.line()
       .x(function(d: any) {return d.x})
       .y(function(d: any) {return d.y});
-    
-    console.log(typeof lineFunc);
 
     // adiciona o caminho usando esta função auxiliar
     svg.append('path')
