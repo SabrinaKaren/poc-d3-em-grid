@@ -20,7 +20,7 @@
     <ng-container matColumnDef="historico">
       <th mat-header-cell *matHeaderCellDef>HISTÓRICO</th>
       <td mat-cell *matCellDef="let element">
-        <app-bar-chart [id]="element.id" [dataSourceUrl]="element.id % 2 == 0 ? '/assets/mocked-data1.csv' : '/assets/mocked-data2.csv'"></app-bar-chart>
+        <app-line-chart [id]="element.id"></app-line-chart>
       </td>
     </ng-container>
   
