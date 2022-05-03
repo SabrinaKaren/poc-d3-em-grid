@@ -26,8 +26,24 @@
   
     <ng-container matColumnDef="pesoNaNotaGeral">
       <th mat-header-cell *matHeaderCellDef>PESO NA NOTA GERAL</th>
-      <td mat-cell *matCellDef="let element" style="padding-right: 50px;">
-        <div class="progress">
+      <td mat-cell *matCellDef="let element">
+        <div class="row g-0">
+          <div class="col-6 col-md-2">
+            <span>{{element.pesoNaNotaGeral | dotToComma}}%</span>
+          </div>
+          <div class="col-sm-6 col-md-8">
+            <div class="progress">
+              <div
+                class="progress-bar bg-success"
+                role="progressbar"
+                [ngStyle]="{'width': element.pesoNaNotaGeral + '%'}"
+                attr.aria-valuenow="{{element.pesoNaNotaGeral}}"
+                aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="progress">
           <div
             class="progress-bar bg-success"
             role="progressbar"
@@ -37,7 +53,7 @@
             aria-valuemax="100">
             {{element.pesoNaNotaGeral}}%
           </div>
-        </div>
+        </div> -->
       </td>
     </ng-container>
   

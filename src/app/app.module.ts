@@ -21,6 +21,7 @@ import { Poc2GridComponent } from './pages/poc2-grid/poc2-grid.component';
 import { Poc3TableComponent } from './pages/poc3-table/poc3-table.component';
 import { DotsChartComponent } from './shared/dots-chart/dots-chart.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { DotToCommaPipe } from './shared/pipes/dot-to-comma.pipe';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     LineChartComponent,
     Poc2GridComponent,
     Poc3TableComponent,
-    DotsChartComponent
+    DotsChartComponent,
+    DotToCommaPipe
   ],
   imports: [
     BrowserModule,
