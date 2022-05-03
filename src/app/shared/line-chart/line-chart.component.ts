@@ -43,7 +43,7 @@ export class LineChartComponent implements OnInit {
     // adiciona o caminho usando esta função auxiliar
     this.svg.append('path')
       .attr('d', lineFunc(this.dataInExpectedFormat))
-      .attr('stroke', 'green')
+      .attr('stroke', '#2A7050')
       .attr('fill', 'none');
 
   }
