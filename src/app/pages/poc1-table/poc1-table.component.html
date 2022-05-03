@@ -1,5 +1,5 @@
-<div class="mt-5 page-margin">
-  <h1>POC 1 - Usando Table</h1>
+<div class="mt-5 page-margin center">
+  <h1>POC 1 - Usando Table _Angular Material_</h1>
 
   <!-- Table -->
   <table mat-table [dataSource]="tableData" class="mat-elevation-z8">
@@ -49,7 +49,7 @@
     </ng-container>
   
     <tr mat-header-row *matHeaderRowDef="columnsIdentificator"></tr>
-    <tr mat-row *matRowDef="let row; columns: columnsIdentificator" onclick="location.href='#';" style="cursor: pointer;"></tr>
+    <tr mat-row *matRowDef="let row; columns: columnsIdentificator" [routerLink]="'/poc1'" style="cursor: pointer;"></tr>
 
   </table>
 </div>
